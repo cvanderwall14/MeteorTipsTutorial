@@ -11,6 +11,12 @@ if(Meteor.isClient){
     }
   });
   
+  Template.leaderboard.events({
+    'click .player': function() {
+      console.log("Clicked a player!");
+    }
+  });
+  
 }
 
 if(Meteor.isServer){
